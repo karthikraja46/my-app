@@ -4,7 +4,20 @@ import './App.css';
 import { Greet } from './components/Greet';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
+import { Status } from './components/Status';
+import { Heading } from './components/Heading';
+import { Oscar } from './components/Oscar';
+
 function App() {
+  return (
+    <div className = 'App'>
+      <Status status='loading' />
+      <Heading>Placeholder Text</Heading>
+      <Oscar><Heading>Oscar goes to leonardo Dicaprio!</Heading></Oscar>
+      <Greet name="Viswas" isLoggedIn={false} />
+    </div>
+  );
+
   const personName = {
     first: 'John',
     last: 'Doe'

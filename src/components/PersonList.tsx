@@ -4,12 +4,15 @@ type PersonListProps = {
         last: string;
     }[]
 }
+
 export const PersonList = (props: PersonListProps) => {
     return (
         <div>
-            {props.names.map((name, index) => (
-                <h2 key={index}>{name.first} {name.last}</h2>
-            ))}
+            {props.names.map(name => {
+                return (
+                    <h2>{name.first} {name.last}</h2>
+                )
+            })}
         </div>
     )
 }
