@@ -7,6 +7,7 @@ import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
 import { Heading } from './components/Heading';
 import { Oscar } from './components/Oscar';
+import { Button } from './components/Button';
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
       <Heading>Placeholder Text</Heading>
       <Oscar><Heading>Oscar goes to leonardo Dicaprio!</Heading></Oscar>
       <Greet name="Viswas" isLoggedIn={false} />
+      <Button handleClick={(event,id) => {
+        console.log('Button Clicked', id);
+      }} />
     </div>
   );
 
